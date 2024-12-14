@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ff9a8b, #fecfef, #f3e6e8);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+}
+
+h1 {
+  color: #6a1b9a;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #4a148c;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sliders {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f3e5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 18px;
+  color: #6a1b9a;
+  font-weight: 500;
+  margin-right: 10px;
+  width: 50px;
+  text-align: left;
+}
+
+input[type="range"] {
+  width: 70%;
+  -webkit-appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: #d1c4e9;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #6a1b9a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin: 15px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.match-btn {
+  background-color: #6a1b9a;
+  color: white;
+  box-shadow: 0 4px 10px rgba(106, 27, 154, 0.3);
+}
+
+.match-btn:hover {
+  background-color: #4a148c;
+  box-shadow: 0 4px 15px rgba(74, 20, 140, 0.4);
+}
+
+.reset-btn {
+  background-color: #e1bee7;
+  color: #4a148c;
+  box-shadow: 0 4px 10px rgba(225, 190, 231, 0.5);
+}
+
+.reset-btn:hover {
+  background-color: #d1c4e9;
+  box-shadow: 0 4px 15px rgba(209, 196, 233, 0.6);
+}
+
+.score {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-top: 20px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
